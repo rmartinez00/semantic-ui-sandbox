@@ -114,7 +114,7 @@ symfony server:start
 ```
 
 ### Recompile after making changes
-After making changes in the .js files, could be skipped if changes are made in the .html files.
+After making changes in the .js,.html files, could be skipped if changes are made in the .css files.
 ```bash
 yarn encore dev
 ```
