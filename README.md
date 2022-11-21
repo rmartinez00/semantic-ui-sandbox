@@ -15,3 +15,8 @@ yarn encore dev
 
 
 Pasos para instalar symfony-cli
+git status
+git diff
+git add . /ruta del archivo
+git commit -m "message"
+git push
