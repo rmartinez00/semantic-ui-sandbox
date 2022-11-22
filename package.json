@@ -22,6 +22,9 @@
         "build": "encore production --progress"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.2.1",
+        "@fortawesome/free-solid-svg-icons": "^6.2.1",
+        "@fortawesome/react-fontawesome": "^0.2.0",
         "@tiptap/core": "^2.0.0-beta.195",
         "@tiptap/extension-image": "^2.0.0-beta.195",
         "@tiptap/extension-table": "^2.0.0-beta.195",
@@ -59,5 +62,5 @@
         "redux-persist": "^6.0.0",
         "semantic-ui-css": "^2.4.1",
         "semantic-ui-react": "^2.0.3"
-      }
+    }
 }

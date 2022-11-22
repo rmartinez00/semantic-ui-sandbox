@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 import {Route, Switch,Redirect, Link, withRouter} from 'react-router-dom';
 import Semantic from './Semantic';
 import { Grid, Button, Container, Header, Tab } from 'semantic-ui-react';
-import 'semantic-ui-css/semantic.min.css'
+import { Image, Label, Segment } from 'semantic-ui-react';
+
+import 'semantic-ui-css/semantic.min.css';
 import '../styles/app.css';
 
 class Home extends Component {
@@ -21,7 +23,7 @@ class Home extends Component {
                 </Grid.Column>
             </Grid.Row>
         
-            <Grid.Row>
+            <Grid.Row >
                 <Grid.Column width={3}>
                 <p>Some Content Here ....</p>
                 </Grid.Column>
@@ -33,11 +35,71 @@ class Home extends Component {
                 </Grid.Column>
             </Grid.Row>
             </Grid>
-            <Button>Semantic Button</Button>
+
             <br />
             <Tab panes={[
+                { menuItem: 'Interpretaciones', render: () => 
+        <Tab.Pane>
+            
+            <p>
+                <div class="ui fluid focus action input">
+                        <input type="text" placeholder="Nombre de Paciente"></input>
+                         
+                            <div class="ui primary animated button" tabindex="0">
+                                <div class="visible content">Generar Reporte</div>
+                                <div class="hidden content">
+                                <i class="right arrow icon"></i>
+                                <i class="file pdf icon"></i>
+                                </div>
+                            </div>   
+                </div>
+            </p>
+
+            <table class="ui stackable mobile table">
+                        <thead>
+                            <tr>
+                            <th>Name</th>
+                            <th>Status</th>
+                            <th class="right aligned">Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>John</td>
+                            <td>Approved</td>
+                            <td class="right aligned">None</td>
+                            </tr>
+                            <tr>
+                            <td>Jamie</td>
+                            <td>Approved</td>
+                            <td class="right aligned">Requires call</td>
+                            </tr>
+                            <tr>
+                            <td>Jill</td>
+                            <td>Denied</td>
+                            <td class="right aligned">None</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                        <table class="ui blue table">
+                        <tbody>
+                            <tr>
+                            <td>Apples</td>
+                            <td>200</td>
+                            <td>0g</td>
+                            </tr>
+                            <tr>
+                            <td>Orange</td>
+                            <td>310</td>
+                            <td>0g</td>
+                            </tr>
+                        </tbody>
+                        </table>
+        
+
+        </Tab.Pane> },
                 { menuItem: 'Botones', render: () => 
-                <Tab.Pane>
+        <Tab.Pane>
                     <p> 
                         <div class="ui buttons">
                             <button class="ui labeled icon button">
@@ -203,7 +265,7 @@ class Home extends Component {
                             </div> 
                         </p>
 
-                </Tab.Pane> },
+        </Tab.Pane> },
                 { menuItem: 'Interpretaciones', render: () => 
                 <Tab.Pane>
                     <p>
@@ -313,7 +375,10 @@ class Home extends Component {
 
                     </p>
                     </div>
-
+                    <Segment padded>
+          <Label attached='top left'>View</Label>
+          <Image src='/images/wireframe/paragraph.png' />
+        </Segment>
                     <div class="ui two column grid">
                         <div class="column">
                             <div class="ui raised segment">
@@ -639,7 +704,7 @@ class Home extends Component {
 
                         <div class="ui teal message">Teal</div>    
 
-                        <table class="ui unstackable table">
+                        <table class="ui stackable mobile table">
                         <thead>
                             <tr>
                             <th>Name</th>
