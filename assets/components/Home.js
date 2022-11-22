@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Route, Switch,Redirect, Link, withRouter} from 'react-router-dom';
 import Semantic from './Semantic';
-import { Grid, Button, Container, Header, Tab } from 'semantic-ui-react';
-import { Image, Label, Segment } from 'semantic-ui-react';
+import { Grid, Button, Container, Header, Tab, Form, GridColumn } from 'semantic-ui-react';
+import { Image, Label, List, Segment, Icon, TextArea } from 'semantic-ui-react';
 
 import 'semantic-ui-css/semantic.min.css';
 import '../styles/app.css';
@@ -40,7 +40,7 @@ class Home extends Component {
                 { menuItem: 'Interpretaciones', render: () => 
         <Tab.Pane>
 
-            Botones principales de cambio de vista y regreso a lista de estudios 
+        Botones principales de cambio de vista y regreso a lista de estudios 
             <br />
              <p> <div class="ui buttons">
                 <div class="ui pink animated button" tabindex="0">
@@ -49,9 +49,6 @@ class Home extends Component {
                     <i class="computer icon"></i>
                     </div>
                 </div>
-
-                <div class="or" data-text="o"></div>
-
                 <div class="ui teal animated button" tabindex="0">
                     <div class="visible content">Lista de estudios</div>
                     <div class="hidden content">
@@ -60,7 +57,7 @@ class Home extends Component {
                     </div>
                 </div>
                 </div></p>
-                Seccion nombre de paciente en Interpretaciones<br />
+        Seccion nombre de paciente en Interpretaciones<br />
                 <p>
                     <div class="ui fluid green basic action input">
                             <input type="text" placeholder="Nombre de Paciente"></input>
@@ -84,7 +81,7 @@ class Home extends Component {
                                 <div class="ui black basic label">
                                     Sexo
                                 </div>
-                                <select class="ui search dropdown" multiple="">
+                                <select class="ui blue basic button search dropdown" multiple="">
                                     <option value="">Sexo</option>
                                     <option value="AL">Masculino</option>
                                     <option value="AK">Femenino</option>
@@ -98,7 +95,7 @@ class Home extends Component {
                                         Edad
                                     </div>
                                     <input type="text" placeholder="Edad"></input>
-                                    <select class="ui search dropdown" multiple="">
+                                    <select class="ui blue basic button search dropdown" multiple="">
                                         <option value="">Años</option>
                                         <option value="AL">Meses</option>
                                         <option value="AK">Dias</option>
@@ -127,7 +124,7 @@ class Home extends Component {
                                         Referente
                                     </div>
                                     <input type="text" placeholder="Medico"></input>
-                                    <select class="ui search dropdown" multiple="">
+                                    <select class="ui blue basic button search dropdown" multiple="">
                                         <option value="">Medico1</option>
                                         <option value="AL">Medico2</option>
                                         <option value="AK">Medico3</option>
@@ -153,6 +150,59 @@ class Home extends Component {
                 </Grid>
                 </td>
             </tbody></table>
+        Observaciones
+            <Segment padded>
+                <Label attached=' top left'>Observaciones</Label>
+               
+                <div class="ui segment">
+                    <h2 class="ui  floated header">Interpretacion I</h2>
+                     <p>
+
+                    <h4 class="ui horizontal header">
+                    <i class="file text icon"></i>
+                    Plantillas
+                    </h4>
+                    <div class="ui labeled input ">
+                        <select class="ui search dropdown" multiple="">
+                        <option value="">Selecciona plantilla</option>
+                         <option value="AL">Medico2</option>
+                        <option value="AK">Medico3</option>
+                        </select>
+                        <div class="ui blue basic animated button" tabindex="0">
+                            <div class="visible content">Guardar Como...</div>
+                            <div class="hidden content">
+                            <i class="save icon"></i>
+                             </div>
+                        </div>   
+                    </div>
+                    
+                  <h4 class="ui horizontal divider header">
+                    <i class="edit icon"></i>
+                    Reporte
+                    </h4>
+                    <Form>
+                        <TextArea placeholder='Reporte de interpretacion' />
+                    </Form>
+                    </p>
+                    </div>
+                    <Button.Group>
+                    <div class="ui blue animated button" tabindex="0">
+                            <div class="visible content">Agregar Reporte</div>
+                            <div class="hidden content">
+                            <i class="plus icon"></i><i class="edit icon"></i>
+                             </div>
+                        </div>   
+                        <Button.Or text='ó'/>
+                        <div class="ui green animated button" tabindex="0">
+                                    <div class="visible content">Generar Reporte</div>
+                                    <div class="hidden content">
+                                    <i class="right arrow icon"></i>
+                                    <i class="file pdf icon"></i>
+                                    </div>
+                         </div>   
+                    </Button.Group>
+                    
+            </Segment>
 
         </Tab.Pane> },
                 { menuItem: 'Botones', render: () => 
@@ -227,20 +277,6 @@ class Home extends Component {
                                            
                         </p>
                         <p>
-                        <div class="ui right labeled input">
-                        <input type="text" placeholder="Medico referente"></input>
-                        <div class="ui dropdown label">
-                            <div class="text">Med Referente</div>
-                            <i class="dropdown teal icon"></i>
-                            <div class="menu">
-                            <div class="item">Medico uno</div>
-                            <div class="item">Medico dos</div>
-                            <div class="item">Medico tres</div>
-                            </div>
-                        </div>
-                        </div>
-                        </p>
-                        <p>
                         <div class="ui fluid icon focus input">
                         <input type="text" placeholder="Search a very wide input..."></input>
                         <i class="search icon"></i>
@@ -250,125 +286,7 @@ class Home extends Component {
                         <div class="ui button">Search</div>
                         </div>
                         </p>
-                        <p>
-                        <form class="ui fluid form">
-                            <div class="field">
-                                <input type="text" placeholder="First name"></input>
-                                <div class="ui pointing red label">
-                                Please enter a value
-                                </div>
-                            </div>
-                            <div class="ui divider"></div>
-                            <div class="field" placeholder="Last Name">
-                                <div class="ui pointing below primary basic label">
-                                Please enter a value
-                                </div>
-                                <input type="text"></input>
-                            </div>
-                            <div class="ui divider"></div>
-                            <div class="inline focus field">
-                                <input type="text" placeholder="Username"></input>
-                                <div class="ui left pointing blue label">
-                                That name is taken!
-                                </div>
-                            </div>
-                            <div class="ui divider"></div>
-                            <div class="inline field">
-                                <div class="ui right pointing green basic label">
-                                Your password must be 6 characters or more
-                                </div>
-                                <input type="password"></input>
-                            </div>
-                            </form>
-                        </p>
-                        <p>
-                        <div class="ui right labeled input">
-                        <label for="amount" class="ui basic teal label">Nombre</label>
-                        <input type="text" placeholder="Nombre paciente" id="amount"></input>
-                        <div class="ui positive animated button label" tabindex="0">
-                        <div class="visible content">Generar Reporte</div>
-                        <div class="hidden content">
-                        <i class="right arrow icon"></i>
-                        </div>
-                        </div>
-                        </div>
-                        </p>
-                        <p>
-                        <div class="ui left action input">
-                            <button class="ui teal labeled icon button">
-                                Nombre
-                            </button>
-                            <input type="text" value="Nombre paciente"></input>
-                            </div> 
-                        </p>
-
-                    <p>
-                    <table class="ui celled table">
-                        <thead>
-                            <th>Header</th>
-                            <th>Correct Guesses</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="ui image header">
-                                    <div class="content">
-                                    SEXO
-                                    <div class="sub header">Human Resources
-                                    </div>
-                                    </div>
-                                    </h4>
-                                </td>
-                                <td>
-                                EDAD
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                <h4 class="ui image header">
-                                    <div class="content">
-                                    NACIMIENTO
-                                    <div class="sub header">Fabric Design
-                                    </div>
-                                    </div>
-                                </h4>
-                                </td>
-                                <td>
-                                FECHA
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                <h4 class="ui image header">
-                                    <div class="content">
-                                    MEDICO
-                                    <div class="sub header">Entertainment
-                                    </div>
-                                    </div>
-                                </h4>
-                                </td>
-                                <td>
-                                EMAIL
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                <h4 class="ui image header">
-                                    <div class="content">
-                                    SELECCION
-                                    <div class="sub header">Executive
-                                    </div>
-                                    </div>
-                                </h4>
-                                </td>
-                                <td>
-                                PROCEDIMIENTO
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </p>
-                    
+   
                     <div class="ui segment">
                     <h2 class="ui right floated header">Floated Content</h2>
                     <div class="ui clearing divider"></div>
@@ -728,280 +646,8 @@ class Home extends Component {
                         </div>
                         </div>
   
-
-                        <div class="ui teal message">Teal</div>    
-
-                        <table class="ui stackable mobile table">
-                        <thead>
-                            <tr>
-                            <th>Name</th>
-                            <th>Status</th>
-                            <th class="right aligned">Notes</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <td>John</td>
-                            <td>Approved</td>
-                            <td class="right aligned">None</td>
-                            </tr>
-                            <tr>
-                            <td>Jamie</td>
-                            <td>Approved</td>
-                            <td class="right aligned">Requires call</td>
-                            </tr>
-                            <tr>
-                            <td>Jill</td>
-                            <td>Denied</td>
-                            <td class="right aligned">None</td>
-                            </tr>
-                        </tbody>
-                        </table>
-
-                        <table class="ui tablet stackable table">
-                        <thead>
-                            <tr>
-                            <th>Name</th>
-                            <th>Status</th>
-                            <th class="right aligned">Notes</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <td>John</td>
-                            <td>Approved</td>
-                            <td class="right aligned">None</td>
-                            </tr>
-                            <tr>
-                            <td>Jamie</td>
-                            <td>Approved</td>
-                            <td class="right aligned">Requires call</td>
-                            </tr>
-                            <tr>
-                            <td>Jill</td>
-                            <td>Denied</td>
-                            <td class="right aligned">None</td>
-                            </tr>
-                        </tbody>
-                        </table>
-
-                        <table class="ui red table">
-                        <thead>
-                            <tr><th>Food</th>
-                            <th>Calories</th>
-                            <th>Protein</th>
-                        </tr></thead><tbody>
-                            <tr>
-                            <td>Apples</td>
-                            <td>200</td>
-                            <td>0g</td>
-                            </tr>
-                            <tr>
-                            <td>Orange</td>
-                            <td>310</td>
-                            <td>0g</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                        
-                        <table class="ui orange table">
-                        <thead>
-                            <tr><th>Food</th>
-                            <th>Calories</th>
-                            <th>Protein</th>
-                        </tr></thead><tbody>
-                            <tr>
-                            <td>Apples</td>
-                            <td>200</td>
-                            <td>0g</td>
-                            </tr>
-                            <tr>
-                            <td>Orange</td>
-                            <td>310</td>
-                            <td>0g</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                        <table class="ui yellow table">
-                        <thead>
-                            <tr><th>Food</th>
-                            <th>Calories</th>
-                            <th>Protein</th>
-                        </tr></thead><tbody>
-                            <tr>
-                            <td>Apples</td>
-                            <td>200</td>
-                            <td>0g</td>
-                            </tr>
-                            <tr>
-                            <td>Orange</td>
-                            <td>310</td>
-                            <td>0g</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                        <table class="ui olive table">
-                        <thead>
-                            <tr><th>Food</th>
-                            <th>Calories</th>
-                            <th>Protein</th>
-                        </tr></thead><tbody>
-                            <tr>
-                            <td>Apples</td>
-                            <td>200</td>
-                            <td>0g</td>
-                            </tr>
-                            <tr>
-                            <td>Orange</td>
-                            <td>310</td>
-                            <td>0g</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                        <table class="ui green table">
-                        <thead>
-                            <tr><th>Food</th>
-                            <th>Calories</th>
-                            <th>Protein</th>
-                        </tr></thead><tbody>
-                            <tr>
-                            <td>Apples</td>
-                            <td>200</td>
-                            <td>0g</td>
-                            </tr>
-                            <tr>
-                            <td>Orange</td>
-                            <td>310</td>
-                            <td>0g</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                        <table class="ui teal table">
-                        <thead>
-                            <tr><th>Food</th>
-                            <th>Calories</th>
-                            <th>Protein</th>
-                        </tr></thead><tbody>
-                            <tr>
-                            <td>Apples</td>
-                            <td>200</td>
-                            <td>0g</td>
-                            </tr>
-                            <tr>
-                            <td>Orange</td>
-                            <td>310</td>
-                            <td>0g</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                        <table class="ui blue table">
-                        <thead>
-                            <tr><th>Food</th>
-                            <th>Calories</th>
-                            <th>Protein</th>
-                        </tr></thead><tbody>
-                            <tr>
-                            <td>Apples</td>
-                            <td>200</td>
-                            <td>0g</td>
-                            </tr>
-                            <tr>
-                            <td>Orange</td>
-                            <td>310</td>
-                            <td>0g</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                        <table class="ui violet table">
-                        <thead>
-                            <tr><th>Food</th>
-                            <th>Calories</th>
-                            <th>Protein</th>
-                        </tr></thead><tbody>
-                            <tr>
-                            <td>Apples</td>
-                            <td>200</td>
-                            <td>0g</td>
-                            </tr>
-                            <tr>
-                            <td>Orange</td>
-                            <td>310</td>
-                            <td>0g</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                        <table class="ui purple table">
-                        <thead>
-                            <tr><th>Food</th>
-                            <th>Calories</th>
-                            <th>Protein</th>
-                        </tr></thead><tbody>
-                            <tr>
-                            <td>Apples</td>
-                            <td>200</td>
-                            <td>0g</td>
-                            </tr>
-                            <tr>
-                            <td>Orange</td>
-                            <td>310</td>
-                            <td>0g</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                        <table class="ui pink table">
-                        <thead>
-                            <tr><th>Food</th>
-                            <th>Calories</th>
-                            <th>Protein</th>
-                        </tr></thead><tbody>
-                            <tr>
-                            <td>Apples</td>
-                            <td>200</td>
-                            <td>0g</td>
-                            </tr>
-                            <tr>
-                            <td>Orange</td>
-                            <td>310</td>
-                            <td>0g</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                        <table class="ui grey table">
-                        <thead>
-                            <tr><th>Food</th>
-                            <th>Calories</th>
-                            <th>Protein</th>
-                        </tr></thead><tbody>
-                            <tr>
-                            <td>Apples</td>
-                            <td>200</td>
-                            <td>0g</td>
-                            </tr>
-                            <tr>
-                            <td>Orange</td>
-                            <td>310</td>
-                            <td>0g</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                        <table class="ui black table">
-                        <thead>
-                            <tr><th>Food</th>
-                            <th>Calories</th>
-                            <th>Protein</th>
-                        </tr></thead><tbody>
-                            <tr>
-                            <td>Apples</td>
-                            <td>200</td>
-                            <td>0g</td>
-                            </tr>
-                            <tr>
-                            <td>Orange</td>
-                            <td>310</td>
-                            <td>0g</td>
-                            </tr>
-                        </tbody>
-                        </table>
+                 
+                   
                 <table class="ui sortable celled table">
                     <thead>
                         <tr>
