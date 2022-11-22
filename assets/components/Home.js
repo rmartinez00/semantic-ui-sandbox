@@ -72,7 +72,7 @@ class Home extends Component {
                     </div>
                 </p>
                 <table  class="ui blue table">
-                    <thead> Datos Demograficos</thead>
+                    <thead> <h4>Datos Demograficos </h4></thead>
                     <tbody>
                         <td>
                  <Grid doubling stackable columns={4}>
@@ -150,7 +150,7 @@ class Home extends Component {
                 </Grid>
                 </td>
             </tbody></table>
-        Observaciones
+        
             <Segment padded>
                 <Label attached=' top left'>Observaciones</Label>
                
