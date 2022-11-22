@@ -184,15 +184,60 @@ class Home extends Component {
                         <TextArea placeholder='Reporte de interpretacion' />
                     </Form>
                     </p>
-                    </div>
-                    <Button.Group>
-                    <div class="ui blue animated button" tabindex="0">
-                            <div class="visible content">Agregar Reporte</div>
+                </div>
+                <div class="ui red animated button" tabindex="0">
+                            <div class="visible content">Eliminar Reporte</div>
                             <div class="hidden content">
-                            <i class="plus icon"></i><i class="edit icon"></i>
+                            <i class="minus icon"></i><i class="edit icon"></i>
+                             </div>
+                        </div>  
+                <div class="ui segment">
+                    <h2 class="ui  floated header">Interpretacion II</h2>
+                     <p>
+
+                    <h4 class="ui horizontal header">
+                    <i class="file text icon"></i>
+                    Plantillas
+                    </h4>
+                    <div class="ui labeled input ">
+                        <select class="ui search dropdown" multiple="">
+                        <option value="">Selecciona plantilla</option>
+                         <option value="AL">Medico2</option>
+                        <option value="AK">Medico3</option>
+                        </select>
+                        <div class="ui blue basic animated button" tabindex="0">
+                            <div class="visible content">Guardar Como...</div>
+                            <div class="hidden content">
+                            <i class="save icon"></i>
+                             </div>
+                        </div>   
+                    </div>
+                    
+                  <h4 class="ui horizontal divider header">
+                    <i class="edit icon"></i>
+                    Reporte
+                    </h4>
+                    <Form>
+                        <TextArea placeholder='Reporte de interpretacion' />
+                    </Form>
+                    </p>
+                </div>
+                    <Button.Group>
+                    <div class="ui red animated button" tabindex="0">
+                            <div class="visible content">Eliminar Reporte</div>
+                            <div class="hidden content">
+                            <i class="minus icon"></i><i class="edit icon"></i>
                              </div>
                         </div>   
                         <Button.Or text='ó'/>
+                        <div class="ui blue animated button" tabindex="0">
+                                    <div class="visible content">Agregar Reporte</div>
+                                    <div class="hidden content">
+                                    <i class="plus icon"></i>
+                                    <i class="edit icon"></i>
+                                    </div>
+                         </div>   
+                         <Button.Or text='ó'/>
                         <div class="ui green animated button" tabindex="0">
                                     <div class="visible content">Generar Reporte</div>
                                     <div class="hidden content">
