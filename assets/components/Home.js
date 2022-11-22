@@ -6,9 +6,8 @@ import { Image, Label, Segment } from 'semantic-ui-react';
 
 import 'semantic-ui-css/semantic.min.css';
 import '../styles/app.css';
-
 class Home extends Component {
-    
+
     render() {
         return (
             <Container>
@@ -28,7 +27,7 @@ class Home extends Component {
                 <p>Some Content Here ....</p>
                 </Grid.Column>
                 <Grid.Column width={10}>
-                <p>some content here</p>
+               sdadasfasfas
                 </Grid.Column>
                 <Grid.Column width={3}>
                 <p>Some Content Here ....</p>
@@ -40,62 +39,120 @@ class Home extends Component {
             <Tab panes={[
                 { menuItem: 'Interpretaciones', render: () => 
         <Tab.Pane>
-            
-            <p>
-                <div class="ui fluid focus action input">
-                        <input type="text" placeholder="Nombre de Paciente"></input>
-                         
-                            <div class="ui primary animated button" tabindex="0">
-                                <div class="visible content">Generar Reporte</div>
-                                <div class="hidden content">
-                                <i class="right arrow icon"></i>
-                                <i class="file pdf icon"></i>
-                                </div>
-                            </div>   
-                </div>
-            </p>
 
-            <table class="ui stackable mobile table">
-                        <thead>
-                            <tr>
-                            <th>Name</th>
-                            <th>Status</th>
-                            <th class="right aligned">Notes</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <td>John</td>
-                            <td>Approved</td>
-                            <td class="right aligned">None</td>
-                            </tr>
-                            <tr>
-                            <td>Jamie</td>
-                            <td>Approved</td>
-                            <td class="right aligned">Requires call</td>
-                            </tr>
-                            <tr>
-                            <td>Jill</td>
-                            <td>Denied</td>
-                            <td class="right aligned">None</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                        <table class="ui blue table">
-                        <tbody>
-                            <tr>
-                            <td>Apples</td>
-                            <td>200</td>
-                            <td>0g</td>
-                            </tr>
-                            <tr>
-                            <td>Orange</td>
-                            <td>310</td>
-                            <td>0g</td>
-                            </tr>
-                        </tbody>
-                        </table>
-        
+            Botones principales de cambio de vista y regreso a lista de estudios 
+            <br />
+             <p> <div class="ui buttons">
+                <div class="ui pink animated button" tabindex="0">
+                    <div class="visible content">Estilo de Vista</div>
+                    <div class="hidden content">
+                    <i class="computer icon"></i>
+                    </div>
+                </div>
+
+                <div class="or" data-text="o"></div>
+
+                <div class="ui teal animated button" tabindex="0">
+                    <div class="visible content">Lista de estudios</div>
+                    <div class="hidden content">
+                    <i class="right arrow icon"></i>
+                    <i class="list icon"></i>
+                    </div>
+                </div>
+                </div></p>
+                Seccion nombre de paciente en Interpretaciones<br />
+                <p>
+                    <div class="ui fluid green basic action input">
+                            <input type="text" placeholder="Nombre de Paciente"></input>
+                            
+                                <div class="ui green animated button" tabindex="0">
+                                    <div class="visible content">Generar Reporte</div>
+                                    <div class="hidden content">
+                                    <i class="right arrow icon"></i>
+                                    <i class="file pdf icon"></i>
+                                    </div>
+                                </div>   
+                    </div>
+                </p>
+                <table  class="ui blue table">
+                    <thead> Datos Demograficos</thead>
+                    <tbody>
+                        <td>
+                 <Grid doubling stackable columns={4}>
+                    <Grid.Column>
+                    <div class="ui labeled input ">
+                                <div class="ui black basic label">
+                                    Sexo
+                                </div>
+                                <select class="ui search dropdown" multiple="">
+                                    <option value="">Sexo</option>
+                                    <option value="AL">Masculino</option>
+                                    <option value="AK">Femenino</option>
+                                    <option value="WV">Otro</option>
+                                    </select>
+                            </div>
+                    </Grid.Column>
+                    <Grid.Column>
+                            <div class="ui labeled input ">
+                                    <div class="ui black basic label">
+                                        Edad
+                                    </div>
+                                    <input type="text" placeholder="Edad"></input>
+                                    <select class="ui search dropdown" multiple="">
+                                        <option value="">Años</option>
+                                        <option value="AL">Meses</option>
+                                        <option value="AK">Dias</option>
+                                        </select>
+                                </div>
+                    </Grid.Column>
+                    <Grid.Column>
+                    <div class="ui labeled input">
+                                <div class="ui black basic label">
+                                    Nacimiento
+                                </div>
+                                <input type="text" placeholder="fecha nacimiento"></input>
+                                </div>
+                    </Grid.Column>
+                    <Grid.Column>
+                                <div class="ui labeled input">
+                                    <div class="ui black basic label">
+                                        Fecha estudio
+                                    </div>
+                                    <input type="text" placeholder="fecha estudio"></input>
+                                    </div>
+                    </Grid.Column>
+                    <Grid.Column>
+                                <div class="ui labeled input ">
+                                    <div class="ui black basic label">
+                                        Referente
+                                    </div>
+                                    <input type="text" placeholder="Medico"></input>
+                                    <select class="ui search dropdown" multiple="">
+                                        <option value="">Medico1</option>
+                                        <option value="AL">Medico2</option>
+                                        <option value="AK">Medico3</option>
+                                        </select>
+                                </div>
+                    </Grid.Column>
+                    <Grid.Column>
+                            <div class="ui labeled input">
+                                <div class="ui black basic label">
+                                    Email
+                                </div>
+                                <input type="text" placeholder="correo electronico"></input>
+                                </div>
+                    </Grid.Column>
+                    <Grid.Column>
+                            <div class="ui labeled input">
+                                <div class="ui black basic label">
+                                    Procedimiento
+                                </div>
+                                <input type="text" placeholder="Procedimiento"></input>
+                                </div>
+                    </Grid.Column>
+                </Grid>
+                </td>
+            </tbody></table>
 
         </Tab.Pane> },
                 { menuItem: 'Botones', render: () => 
@@ -115,26 +172,6 @@ class Home extends Component {
                                 <i class="right chevron icon"></i>
                             </button>
                         </div>
-                        <br />
-                        boton verde
-                        <br />
-                        <div class="ui positive animated button" tabindex="0">
-                        <div class="visible content">Generar Reporte</div>
-                        <div class="hidden content">
-                        <i class="right arrow icon"></i>
-                        </div>
-                        </div>
-                        <br />
-                        boton verde negativo
-                        <br />
-                        <div class="ui positive basic animated button" tabindex="0">
-                        <div class="visible content">Generar Reporte</div>
-                        <div class="hidden content">
-                        <i class=" right arrow icon"></i>
-                        </div>
-                        </div>
-                        <br />
-                        <button class="ui toggle button active">Voted</button>
                         <br />
 
                         <div class="ui buttons">
@@ -265,9 +302,6 @@ class Home extends Component {
                             </div> 
                         </p>
 
-        </Tab.Pane> },
-                { menuItem: 'Interpretaciones', render: () => 
-                <Tab.Pane>
                     <p>
                     <table class="ui celled table">
                         <thead>
@@ -334,8 +368,6 @@ class Home extends Component {
                         </tbody>
                     </table>
                 </p>
-                </Tab.Pane> },
-                { menuItem: 'Secciones', render: () => <Tab.Pane>
                     
                     <div class="ui segment">
                     <h2 class="ui right floated header">Floated Content</h2>
@@ -508,9 +540,7 @@ class Home extends Component {
                         <div class="ui icon button" data-content="The default theme's basic popup removes the pointing arrow." data-variation="basic">
                         <i class="add icon"></i>
                         </div>
-                </Tab.Pane> },
-                { menuItem: 'elementos', render: () => 
-                 <Tab.Pane> 
+           
                     <p>elementos invisibles reveal</p>
                     <div class="ui move right reveal">
                     <div class="visible content">
@@ -624,9 +654,6 @@ class Home extends Component {
                         </ul>
                     </div>
                     </div>
-                 </Tab.Pane> },
-                { menuItem: 'grid 2', render: () => 
-                <Tab.Pane>
                     <div class="ui grid">
                         <div class="doubling eight column row">
                             <div class="column"></div>
