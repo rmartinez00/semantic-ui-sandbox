@@ -440,6 +440,9 @@ class Home extends Component {
                             </div>
                         </div>
                         </div>
+                        <div class="ui icon button" data-content="The default theme's basic popup removes the pointing arrow." data-variation="basic">
+                        <i class="add icon"></i>
+                        </div>
                 </Tab.Pane> },
                 { menuItem: 'elementos', render: () => 
                  <Tab.Pane> 
@@ -556,46 +559,43 @@ class Home extends Component {
                         </ul>
                     </div>
                     </div>
-
-                </Tab.Pane> },
-
-
-                { menuItem: 'Grid', render: () => 
-                <Tab.Pane> 
+                 </Tab.Pane> },
+                { menuItem: 'grid 2', render: () => 
+                <Tab.Pane>
                     <div class="ui grid">
-                    <div class="doubling eight column row">
-                        <div class="column"></div>
-                        <div class="column"></div>
-                        <div class="column"></div>
-                        <div class="column"></div>
-                        <div class="column"></div>
-                        <div class="column"></div>
-                        <div class="column"></div>
-                        <div class="column"></div>
-                    </div>
-                    <div class="doubling six column row">
-                        <div class="column"></div>
-                        <div class="column"></div>
-                        <div class="column"></div>
-                        <div class="column"></div>
-                        <div class="column"></div>
-                        <div class="column"></div>
-                    </div>
-                    <div class="doubling four column row">
-                        <div class="column"></div>
-                        <div class="column"></div>
-                        <div class="column"></div>
-                        <div class="column"></div>
-                    </div>
+                        <div class="doubling eight column row">
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                        </div>
+                        <div class="doubling six column row">
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                        </div>
+                        <div class="doubling four column row">
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                        </div>
                     </div>
                     
-
+               
                     <div class="ui menu">
                         <a class="browse item active">
                             Browse
                             <i class="dropdown icon"></i>
                         </a>
-                        </div>
+                    </div>
                         <div class="ui fluid popup bottom left transition hidden">
                         <div class="ui four column relaxed equal height divided grid">
                             <div class="column">
@@ -635,8 +635,715 @@ class Home extends Component {
                             </div>
                         </div>
                         </div>
+  
 
                         <div class="ui teal message">Teal</div>    
+
+                        <table class="ui unstackable table">
+                        <thead>
+                            <tr>
+                            <th>Name</th>
+                            <th>Status</th>
+                            <th class="right aligned">Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>John</td>
+                            <td>Approved</td>
+                            <td class="right aligned">None</td>
+                            </tr>
+                            <tr>
+                            <td>Jamie</td>
+                            <td>Approved</td>
+                            <td class="right aligned">Requires call</td>
+                            </tr>
+                            <tr>
+                            <td>Jill</td>
+                            <td>Denied</td>
+                            <td class="right aligned">None</td>
+                            </tr>
+                        </tbody>
+                        </table>
+
+                        <table class="ui tablet stackable table">
+                        <thead>
+                            <tr>
+                            <th>Name</th>
+                            <th>Status</th>
+                            <th class="right aligned">Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>John</td>
+                            <td>Approved</td>
+                            <td class="right aligned">None</td>
+                            </tr>
+                            <tr>
+                            <td>Jamie</td>
+                            <td>Approved</td>
+                            <td class="right aligned">Requires call</td>
+                            </tr>
+                            <tr>
+                            <td>Jill</td>
+                            <td>Denied</td>
+                            <td class="right aligned">None</td>
+                            </tr>
+                        </tbody>
+                        </table>
+
+                        <table class="ui red table">
+                        <thead>
+                            <tr><th>Food</th>
+                            <th>Calories</th>
+                            <th>Protein</th>
+                        </tr></thead><tbody>
+                            <tr>
+                            <td>Apples</td>
+                            <td>200</td>
+                            <td>0g</td>
+                            </tr>
+                            <tr>
+                            <td>Orange</td>
+                            <td>310</td>
+                            <td>0g</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                        
+                        <table class="ui orange table">
+                        <thead>
+                            <tr><th>Food</th>
+                            <th>Calories</th>
+                            <th>Protein</th>
+                        </tr></thead><tbody>
+                            <tr>
+                            <td>Apples</td>
+                            <td>200</td>
+                            <td>0g</td>
+                            </tr>
+                            <tr>
+                            <td>Orange</td>
+                            <td>310</td>
+                            <td>0g</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                        <table class="ui yellow table">
+                        <thead>
+                            <tr><th>Food</th>
+                            <th>Calories</th>
+                            <th>Protein</th>
+                        </tr></thead><tbody>
+                            <tr>
+                            <td>Apples</td>
+                            <td>200</td>
+                            <td>0g</td>
+                            </tr>
+                            <tr>
+                            <td>Orange</td>
+                            <td>310</td>
+                            <td>0g</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                        <table class="ui olive table">
+                        <thead>
+                            <tr><th>Food</th>
+                            <th>Calories</th>
+                            <th>Protein</th>
+                        </tr></thead><tbody>
+                            <tr>
+                            <td>Apples</td>
+                            <td>200</td>
+                            <td>0g</td>
+                            </tr>
+                            <tr>
+                            <td>Orange</td>
+                            <td>310</td>
+                            <td>0g</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                        <table class="ui green table">
+                        <thead>
+                            <tr><th>Food</th>
+                            <th>Calories</th>
+                            <th>Protein</th>
+                        </tr></thead><tbody>
+                            <tr>
+                            <td>Apples</td>
+                            <td>200</td>
+                            <td>0g</td>
+                            </tr>
+                            <tr>
+                            <td>Orange</td>
+                            <td>310</td>
+                            <td>0g</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                        <table class="ui teal table">
+                        <thead>
+                            <tr><th>Food</th>
+                            <th>Calories</th>
+                            <th>Protein</th>
+                        </tr></thead><tbody>
+                            <tr>
+                            <td>Apples</td>
+                            <td>200</td>
+                            <td>0g</td>
+                            </tr>
+                            <tr>
+                            <td>Orange</td>
+                            <td>310</td>
+                            <td>0g</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                        <table class="ui blue table">
+                        <thead>
+                            <tr><th>Food</th>
+                            <th>Calories</th>
+                            <th>Protein</th>
+                        </tr></thead><tbody>
+                            <tr>
+                            <td>Apples</td>
+                            <td>200</td>
+                            <td>0g</td>
+                            </tr>
+                            <tr>
+                            <td>Orange</td>
+                            <td>310</td>
+                            <td>0g</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                        <table class="ui violet table">
+                        <thead>
+                            <tr><th>Food</th>
+                            <th>Calories</th>
+                            <th>Protein</th>
+                        </tr></thead><tbody>
+                            <tr>
+                            <td>Apples</td>
+                            <td>200</td>
+                            <td>0g</td>
+                            </tr>
+                            <tr>
+                            <td>Orange</td>
+                            <td>310</td>
+                            <td>0g</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                        <table class="ui purple table">
+                        <thead>
+                            <tr><th>Food</th>
+                            <th>Calories</th>
+                            <th>Protein</th>
+                        </tr></thead><tbody>
+                            <tr>
+                            <td>Apples</td>
+                            <td>200</td>
+                            <td>0g</td>
+                            </tr>
+                            <tr>
+                            <td>Orange</td>
+                            <td>310</td>
+                            <td>0g</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                        <table class="ui pink table">
+                        <thead>
+                            <tr><th>Food</th>
+                            <th>Calories</th>
+                            <th>Protein</th>
+                        </tr></thead><tbody>
+                            <tr>
+                            <td>Apples</td>
+                            <td>200</td>
+                            <td>0g</td>
+                            </tr>
+                            <tr>
+                            <td>Orange</td>
+                            <td>310</td>
+                            <td>0g</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                        <table class="ui grey table">
+                        <thead>
+                            <tr><th>Food</th>
+                            <th>Calories</th>
+                            <th>Protein</th>
+                        </tr></thead><tbody>
+                            <tr>
+                            <td>Apples</td>
+                            <td>200</td>
+                            <td>0g</td>
+                            </tr>
+                            <tr>
+                            <td>Orange</td>
+                            <td>310</td>
+                            <td>0g</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                        <table class="ui black table">
+                        <thead>
+                            <tr><th>Food</th>
+                            <th>Calories</th>
+                            <th>Protein</th>
+                        </tr></thead><tbody>
+                            <tr>
+                            <td>Apples</td>
+                            <td>200</td>
+                            <td>0g</td>
+                            </tr>
+                            <tr>
+                            <td>Orange</td>
+                            <td>310</td>
+                            <td>0g</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                <table class="ui sortable celled table">
+                    <thead>
+                        <tr>
+                        <th class="">Name</th>
+                        <th class="sorted descending">Status</th>
+                        <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>No Action</td>
+                        <td>None</td>
+                        </tr><tr>
+                        <td>Jill</td>
+                        <td class="negative">Denied</td>
+                        <td>None</td>
+                        </tr><tr>
+                        <td>Jamie</td>
+                        <td class="positive">Approved</td>
+                        <td class="warning">Requires call</td>
+                        </tr>
+                        </tbody>
+                    <tfoot>
+                        <tr><th>3 People</th>
+                        <th>2 Approved</th>
+                        <th></th>
+                    </tr></tfoot>
+                    </table>
+                    
+                <table class="ui compact celled definition table">
+                    <thead class="full-width">
+                        <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Registration Date</th>
+                        <th>E-mail address</th>
+                        <th>Premium Plan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="collapsing">
+                                <div class="ui fitted slider checkbox">
+                                 <label>text</label>
+                                </div>
+                            </td>
+                        <td>John Lilki</td>
+                        <td>September 14, 2013</td>
+                        <td>jhlilk22@yahoo.com</td>
+                        <td>No</td>
+                        </tr>
+
+                    </tbody>
+                    <tfoot class="full-width">
+                        <tr>
+                        <th></th>
+                        <th colspan="4">
+                            <div class="ui right floated small primary labeled icon button">
+                            <i class="user icon"></i> Add User
+                            </div>
+                            <div class="ui small  button">
+                            Approve
+                            </div>
+                            <div class="ui small  disabled button">
+                            Approve All
+                            </div>
+                        </th>
+                        </tr>
+                    </tfoot>
+                </table>   
+
+                </Tab.Pane> },
+                { menuItem: 'grid 3', render: () => 
+                <Tab.Pane>
+                    <div class="ui four cards">
+                    <a class="red card">
+                        <div class="image">
+                        <img></img>
+                        </div>
+                    </a>
+                    <a class="orange card">
+                        <div class="image">
+                        <img></img>
+                        </div>
+                    </a>
+                    <a class="yellow card">
+                        <div class="image">
+                        <img></img>
+                        </div>
+                    </a>
+                    <a class="olive card">
+                        <div class="image">
+                        <img></img>
+                        </div>
+                    </a>
+                    </div>
+
+                    pruebas de divisiones
+
+                    <div class="ui divided items">
+                    <div class="item">
+                        <div class="image">
+                        <img src="/images/wireframe/image.png"></img>
+                        </div>
+                        <div class="content">
+                        <a class="header">12 Years a Slave</a>
+                        <div class="meta">
+                            <span class="cinema">Union Square 14</span>
+                        </div>
+                        <div class="description">
+                            <p></p>
+                        </div>
+                        <div class="extra">
+                            <div class="ui label">IMAX</div>
+                            <div class="ui label"><i class="globe icon"></i> Additional Languages</div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                        <img src="/images/wireframe/image.png"></img>
+                        </div>
+                        <div class="content">
+                        <a class="header">My Neighbor Totoro</a>
+                        <div class="meta">
+                            <span class="cinema">IFC Cinema</span>
+                        </div>
+                        <div class="description">
+                            <p></p>
+                        </div>
+                        <div class="extra">
+                            <div class="ui right floated primary button">
+                            Buy tickets
+                            <i class="right chevron icon"></i>
+                            </div>
+                            <div class="ui label">Limited</div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                        <img src="/images/wireframe/image.png"></img>
+                        </div>
+                        <div class="content">
+                        <a class="header">Watchmen</a>
+                        <div class="meta">
+                            <span class="cinema">IFC</span>
+                        </div>
+                        <div class="description">
+                            <p></p>
+                        </div>
+                        <div class="extra">
+                            <div class="ui right floated primary button">
+                            Buy tickets
+                            <i class="right chevron icon"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    Otra  
+                    <div class="ui items">
+                    <div class="item">
+                        <div class="ui small image">
+                        <img src="/images/wireframe/image.png"></img>
+                        </div>
+                        <div class="middle aligned content">
+                        <div class="header">
+                            Content A
+                        </div>
+                        <div class="description">
+                            <p></p>
+                        </div>
+                        <div class="extra">
+                            <div class="ui right floated button">
+                            Action
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ui small image">
+                        <img src="/images/wireframe/image.png"></img>
+                        </div>
+                        <div class="middle aligned content">
+                        <div class="header">
+                            Content B
+                        </div>
+                        <div class="description">
+                            <p></p>
+                        </div>
+                        <div class="extra">
+                            <div class="ui right floated button">
+                            Action
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ui small image">
+                        <img src="/images/wireframe/image.png"></img>
+                        </div>
+                        <div class="middle aligned content">
+                        <div class="header">
+                            Content C
+                        </div>
+                        <div class="description">
+                            <p></p>
+                        </div>
+                        <div class="extra">
+                            <div class="ui right floated button">
+                            Action
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    </Tab.Pane> },
+                { menuItem: 'Accordeon', render: () => 
+                <Tab.Pane> 
+
+                    <div class="ui styled fluid accordion">
+                    <div class="title active">
+                        <i class="dropdown icon"></i>
+                        What is a dog?
+                    </div>
+                    <div class="content active">
+                        <p class="transition visible" style="display: block !important;">A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        What kinds of dogs are there?
+                    </div>
+                    <div class="content">
+                        <p class="transition hidden">There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        How do you acquire a dog?
+                    </div>
+                    <div class="content">
+                        <p>Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or shelters.</p>
+                        <p>A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows you to assess the pedigree and upbringing of your dog before choosing to take it home. Lastly, finding your dog from a shelter, helps give a good home to a dog who may not find one so readily.</p>
+                    </div>
+                    </div>
+
+                    <select class="ui fluid search dropdown" multiple="">
+                        <option value="">State</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                        </select>
+
+                        <div class="ui floating dropdown labeled icon button">
+                        <i class="filter icon"></i>
+                        <span class="text">Filter Posts</span>
+                        <div class="menu">
+                            <div class="ui icon search input">
+                            <i class="search icon"></i>
+                            <input type="text" placeholder="Search tags..."></input>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="header">
+                            <i class="tags icon"></i>
+                            Tag Label
+                            </div>
+                            <div class="scrolling menu">
+                            <div class="item">
+                                <div class="ui red empty circular label"></div>
+                                Important
+                            </div>
+                            <div class="item">
+                                <div class="ui blue empty circular label"></div>
+                                Announcement
+                            </div>
+                            <div class="item">
+                                <div class="ui black empty circular label"></div>
+                                Cannot Fix
+                            </div>
+                            <div class="item">
+                                <div class="ui purple empty circular label"></div>
+                                News
+                            </div>
+                            <div class="item">
+                                <div class="ui orange empty circular label"></div>
+                                Enhancement
+                            </div>
+                            <div class="item">
+                                <div class="ui empty circular label"></div>
+                                Change Declined
+                            </div>
+                            <div class="item">
+                                <div class="ui yellow empty circular label"></div>
+                                Off Topic
+                            </div>
+                            <div class="item">
+                                <div class="ui pink empty circular label"></div>
+                                Interesting
+                            </div>
+                            <div class="item">
+                                <div class="ui green empty circular label"></div>
+                                Discussion
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+
+
+                        <h4 class="ui header">Inline</h4>
+                        <p>A dropdown can be formatted to appear inline in other content</p>
+                        <span>
+                        Show me posts by
+                        <div class="ui inline dropdown">
+                            <div class="text">
+                            <img class="ui avatar image" src="/images/avatar/small/jenny.jpg"></img>
+                            Jenny Hess
+                            </div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                            <div class="item">
+                                <img class="ui avatar image" src="/images/avatar/small/jenny.jpg"></img>
+                                Jenny Hess
+                            </div>
+                            <div class="item">
+                                <img class="ui avatar image" src="/images/avatar/small/elliot.jpg"></img>
+                                Elliot Fu
+                            </div>
+                            <div class="item">
+                                <img class="ui avatar image" src="/images/avatar/small/stevie.jpg"></img>
+                                Stevie Feliciano
+                            </div>
+                            <div class="item">
+                                <img class="ui avatar image" src="/images/avatar/small/christian.jpg"></img>
+                                Christian
+                            </div>
+                            <div class="item">
+                                <img class="ui avatar image" src="/images/avatar/small/matt.jpg"></img>
+                                Matt
+                            </div>
+                            <div class="item">
+                                <img class="ui avatar image" src="/images/avatar/small/justen.jpg"></img>
+                                Justen Kitsune
+                            </div>
+                            </div>
+                        </div>
+                        </span>
+
+                        <div class="ui floating labeled icon dropdown button">
+                        <i class="add user icon"></i>
+                        <span class="text">Add User</span>
+                        <div class="menu">
+                            <div class="header">
+                            People You Might Know
+                            </div>
+                            <div class="item">
+                            <img class="ui avatar image" src="/images/avatar/small/jenny.jpg"></img>
+                            Jenny Hess
+                            </div>
+                            <div class="item">
+                            <img class="ui avatar image" src="/images/avatar/small/elliot.jpg"></img>
+                            Elliot Fu
+                            </div>
+                            <div class="item">
+                            <img class="ui avatar image" src="/images/avatar/small/stevie.jpg"></img>
+                            Stevie Feliciano
+                            </div>
+                            <div class="header">
+                            Your Friends' Friends
+                            </div>
+                            <div class="item">
+                            <img class="ui avatar image" src="/images/avatar/small/christian.jpg"></img>
+                            Christian
+                            </div>
+                            <div class="item">
+                            <img class="ui avatar image" src="/images/avatar/small/matt.jpg"></img>
+                            Matt
+                            </div>
+                            <div class="item">
+                            <img class="ui avatar image" src="/images/avatar/small/justen.jpg"></img>
+                            Justen Kitsune
+                            </div>
+                        </div>
+                        </div>
 
                 </Tab.Pane> },
             ]} />
