@@ -252,21 +252,16 @@ class Home extends Component {
             </Tab.Pane> },
                 { menuItem: 'Estadisticas', render: () => 
             <Tab.Pane> 
+                <div id="estadisticas generales">
                  <div class="ui breadcrumb">
                         <a class="active section">General</a>
                         <div class="divider"> / </div>
                         <a class="section">Modalidades</a>
-                        <div class="divider"> / </div>
-                        <div class="section">Interpretaciones</div>
+                        
                     </div>
-                    <p>
--------------- ENCABEZADO DE ESTADISTICAS DE SAN CHARBEL CON BOTON IMPRIMIR --------------- <br />
--------------- "RELACION DE ESTUDIOS E INTERPRETACIONES DURANTE /30DIAS/3MESES/1AÑO/TOTAL" --------------- <br />
-                   </p>
-
-                   
+                
                     <div class="ui segment">
-                    <Label attached=' top right'>
+                        <Label attached=' top right'>
                         <div class="ui mini buttons">
                             <button class="ui labeled icon button">
                                 <i class="left chevron icon"></i>
@@ -285,26 +280,23 @@ class Home extends Component {
                                 <i class="right chevron icon"></i>
                             </button>
                         </div></Label>
-                      <left>
+
+
+                                                <p>
+                        -------------- ENCABEZADO DE ESTADISTICAS DE SAN CHARBEL CON BOTON IMPRIMIR --------------- <br />
+                        -------------- "RELACION DE ESTUDIOS E INTERPRETACIONES DURANTE /30DIAS/3MESES/1AÑO/TOTAL" --------------- <br />
+                                        </p>
+                                            <center>
                         <h2 class="ui icon header">
                         <i class="<i chart line icon"></i>
                         <div class="content">
                             line chart 
                             <div class="sub header">
-                            total de estudios
-                                
-                                <select class="ui search mini dropdown" multiple="">
-                        <option value="">General</option>
-                         <option value="AL">Ultrasonido</option>
-                        <option value="AK">Tomografia</option>
-                        <option value="AK">Rayos x</option>
-                        </select></div>
+                            total de estudios general
+                                </div>
                         </div>
                         </h2>  
-                        </left>
-                        
-
-                        <right>
+                  
                         <h2 class="ui icon header">
                         <i class="chart pie icon"></i>
                         <div class="content">
@@ -314,8 +306,8 @@ class Home extends Component {
                                 </div>
                         </div>
                         </h2>  
-                        </right>
-                        <table class="ui blue table">
+                        </center>
+                        <table class="ui blue unstackable table">
                         <thead>
                             <tr>
                                 <th></th>
@@ -323,8 +315,8 @@ class Home extends Component {
                                 <th>Resonancia Magnética</th>
                                 <th>Rayos X</th>
                                 <th>Mastografía</th>
-                                <th>Ultrasonido</th>
-                                <th>Total</th>
+                                <th>total</th>
+                                <th>prom diario</th>
                             </tr>
                         </thead><tbody>
                             <tr>
@@ -336,7 +328,20 @@ class Home extends Component {
                             <td>100</td>
                             <td>480</td>
                             </tr>
+                           
+                        </tbody></table>
+                        <table class="ui red unstackable table">
+                        <thead>
                             <tr>
+                                <th></th>
+                                <th>Tomografía</th>
+                                <th>Resonancia Magnética</th>
+                                <th>Rayos X</th>
+                                <th>Mastografía</th>
+                                <th>total</th>
+                                <th>prom diario</th>
+                            </tr>
+                        </thead><tbody> <tr>
                             <td>Interpretaciones Med Rad1</td>
                             <td>150</td>
                             <td>120</td>
@@ -355,6 +360,28 @@ class Home extends Component {
                             <td>480</td>
                             </tr>
                             <tr>
+                            <td>total</td>
+                            <td>150</td>
+                            <td>120</td>
+                            <td>30</td>
+                            <td>80</td>
+                            <td>100</td>
+                            <td>480</td>
+                            </tr>
+                            </tbody></table>
+                        <table class="ui teal unstackable table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Tomografía</th>
+                                <th>Resonancia Magnética</th>
+                                <th>Rayos X</th>
+                                <th>Mastografía</th>
+                                <th>total</th>
+                                <th>prom diario</th>
+                            </tr>
+                        </thead><tbody>
+                            <tr>
                             <td>Med referente dr uno</td>
                             <td>150</td>
                             <td>120</td>
@@ -372,10 +399,172 @@ class Home extends Component {
                             <td>100</td>
                             <td>480</td>
                             </tr>
-
+                            <tr>
+                            <td>total</td>
+                            <td>150</td>
+                            <td>120</td>
+                            <td>30</td>
+                            <td>80</td>
+                            <td>100</td>
+                            <td>480</td>
+                            </tr>
                         </tbody>
                         </table>
                     </div>
+                </div>
+
+
+                <div id="estadisticas modalidades">
+                 <div class="ui breadcrumb">
+                        <a class=" section">General</a>
+                        <div class="divider"> / </div>
+                        <a class="active section">Modalidades</a>
+                    </div>
+                
+                    <div class="ui segment">
+                        <Label attached=' top right'>
+                        <div class="ui mini buttons">
+                            <button class="ui labeled icon button">
+                                <i class="left chevron icon"></i>
+                                30 días
+                            </button>
+                            <button class="ui button">
+                                <i class="stop icon"></i>
+                                3 meses
+                            </button>
+                            <button class="ui button">
+                                <i class="stop icon"></i>
+                                1 año
+                            </button>
+                            <button class="ui right labeled icon button">
+                                MAX
+                                <i class="right chevron icon"></i>
+                            </button>
+                        </div></Label>
+
+
+                                                <p>
+                        -------------- ENCABEZADO DE ESTADISTICAS DE SAN CHARBEL CON BOTON IMPRIMIR --------------- <br />
+                        -------------- "DETALLE DE MODALIDADES DURANTE /30DIAS/3MESES/1AÑO/TOTAL" --------------- <br />
+                                        </p>
+                                            <center>
+                                                total de estudios, total de interpretaciones, promedio diario de estudios, promedio diario de interpretaciones 
+                        <h2 class="ui icon header">
+                        <i class="<i chart bar icon"></i>
+                        <div class="content">
+                            bar chart 
+                            <div class="sub header">
+                            total de estudios  <select class="ui search dropdown" multiple="">
+                        <option value="">Modalidad</option>
+                         <option value="AL">tomografia</option>
+                        <option value="AK">resonancia</option>
+                        </select>
+                                </div>
+                        </div>
+                        </h2>  
+                  
+                        <h2 class="ui icon header">
+                        <i class="chart bar outline icon"></i>
+                        <div class="content">
+                            bar chart  
+                            <div class="sub header">
+                            concentrado por hora
+                                </div>
+                        </div>
+                        </h2>  
+                        </center>
+                        <table class="ui blue unstackable table">
+                        <thead>
+                            <tr>
+                                <th>estudios </th>
+                                <th>enero</th>
+                                <th>feb</th>
+                                <th>mar</th>
+                                <th>abril</th>
+                                <th>total</th>
+                                <th>prom diario </th>
+                            </tr>
+                        </thead><tbody>
+                            <tr>
+                            <td>tomografia</td>
+                            <td>150</td>
+                            <td>120</td>
+                            <td>30</td>
+                            <td>80</td>
+                            <td>100</td>
+                            <td>480</td>
+                            </tr>
+                            <tr>
+                            <td>resonancia</td>
+                            <td>150</td>
+                            <td>120</td>
+                            <td>30</td>
+                            <td>80</td>
+                            <td>100</td>
+                            <td>480</td>
+                            </tr>
+                            <tr>
+                            <td>ultrasonido</td>
+                            <td>150</td>
+                            <td>120</td>
+                            <td>30</td>
+                            <td>80</td>
+                            <td>100</td>
+                            <td>480</td>
+                            </tr>
+                            <tr>
+                            <td>total</td>
+                            <td>150</td>
+                            <td>120</td>
+                            <td>30</td>
+                            <td>80</td>
+                            <td>100</td>
+                            <td>480</td>
+                            </tr>
+                            </tbody></table>
+                        <table class="ui teal unstackable table">
+                        <thead>
+                            <tr>
+                                <th>interpretaciones</th>
+                                <th>enero</th>
+                                <th>feb</th>
+                                <th>mar</th>
+                                <th>abril</th>
+                                <th>total</th>
+                                <th>prom diario</th>
+                            </tr>
+                        </thead><tbody>
+                            <tr>
+                            <td>tomografia</td>
+                            <td>150</td>
+                            <td>120</td>
+                            <td>30</td>
+                            <td>80</td>
+                            <td>100</td>
+                            <td>480</td>
+                            </tr>
+                            <tr>
+                            <td>resonancia</td>
+                            <td>150</td>
+                            <td>120</td>
+                            <td>30</td>
+                            <td>80</td>
+                            <td>100</td>
+                            <td>480</td>
+                            </tr>
+                            <tr>
+                            <td>total</td>
+                            <td>150</td>
+                            <td>120</td>
+                            <td>30</td>
+                            <td>80</td>
+                            <td>100</td>
+                            <td>480</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
 
                 </Tab.Pane> },
                 { menuItem: 'Botones', render: () => 
