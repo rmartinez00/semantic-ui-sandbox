@@ -3,6 +3,7 @@ import {Route, Switch,Redirect, Link, withRouter} from 'react-router-dom';
 import Semantic from './Semantic';
 import { Grid, Button, Container, Header, Tab, Form, GridColumn } from 'semantic-ui-react';
 import { Image, Label, List, Segment, Icon, TextArea } from 'semantic-ui-react';
+import { Doughnut } from 'react-chartjs-2';
 
 import 'semantic-ui-css/semantic.min.css';
 import '../styles/app.css';
@@ -36,7 +37,7 @@ class Home extends Component {
             </Grid>
 
             <br />
-            <Tab panes={[
+        <Tab panes={[
                 { menuItem: 'Interpretaciones', render: () => 
         <Tab.Pane>
 
@@ -248,10 +249,137 @@ class Home extends Component {
                     </Button.Group>
                     
             </Segment>
+            </Tab.Pane> },
+                { menuItem: 'Estadisticas', render: () => 
+            <Tab.Pane> 
+                 <div class="ui breadcrumb">
+                        <a class="active section">General</a>
+                        <div class="divider"> / </div>
+                        <a class="section">Modalidades</a>
+                        <div class="divider"> / </div>
+                        <div class="section">Interpretaciones</div>
+                    </div>
+                    <p>
+-------------- ENCABEZADO DE ESTADISTICAS DE SAN CHARBEL CON BOTON IMPRIMIR --------------- <br />
+-------------- "RELACION DE ESTUDIOS E INTERPRETACIONES DURANTE /30DIAS/3MESES/1AÑO/TOTAL" --------------- <br />
+                   </p>
 
-        </Tab.Pane> },
+                   
+                    <div class="ui segment">
+                    <Label attached=' top right'>
+                        <div class="ui mini buttons">
+                            <button class="ui labeled icon button">
+                                <i class="left chevron icon"></i>
+                                30 días
+                            </button>
+                            <button class="ui button">
+                                <i class="stop icon"></i>
+                                3 meses
+                            </button>
+                            <button class="ui button">
+                                <i class="stop icon"></i>
+                                1 año
+                            </button>
+                            <button class="ui right labeled icon button">
+                                MAX
+                                <i class="right chevron icon"></i>
+                            </button>
+                        </div></Label>
+                      <left>
+                        <h2 class="ui icon header">
+                        <i class="<i chart line icon"></i>
+                        <div class="content">
+                            line chart 
+                            <div class="sub header">
+                            total de estudios
+                                
+                                <select class="ui search mini dropdown" multiple="">
+                        <option value="">General</option>
+                         <option value="AL">Ultrasonido</option>
+                        <option value="AK">Tomografia</option>
+                        <option value="AK">Rayos x</option>
+                        </select></div>
+                        </div>
+                        </h2>  
+                        </left>
+                        
+
+                        <right>
+                        <h2 class="ui icon header">
+                        <i class="chart pie icon"></i>
+                        <div class="content">
+                            doughnut chart  
+                            <div class="sub header">
+                            distribucion de modalidades
+                                </div>
+                        </div>
+                        </h2>  
+                        </right>
+                        <table class="ui blue table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Tomografía</th>
+                                <th>Resonancia Magnética</th>
+                                <th>Rayos X</th>
+                                <th>Mastografía</th>
+                                <th>Ultrasonido</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead><tbody>
+                            <tr>
+                            <td>Estudios</td>
+                            <td>150</td>
+                            <td>120</td>
+                            <td>30</td>
+                            <td>80</td>
+                            <td>100</td>
+                            <td>480</td>
+                            </tr>
+                            <tr>
+                            <td>Interpretaciones Med Rad1</td>
+                            <td>150</td>
+                            <td>120</td>
+                            <td>30</td>
+                            <td>80</td>
+                            <td>100</td>
+                            <td>480</td>
+                            </tr>
+                            <tr>
+                            <td>Interpretaciones Med Rad2</td>
+                            <td>150</td>
+                            <td>120</td>
+                            <td>30</td>
+                            <td>80</td>
+                            <td>100</td>
+                            <td>480</td>
+                            </tr>
+                            <tr>
+                            <td>Med referente dr uno</td>
+                            <td>150</td>
+                            <td>120</td>
+                            <td>30</td>
+                            <td>80</td>
+                            <td>100</td>
+                            <td>480</td>
+                            </tr>
+                            <tr>
+                            <td>Med referente dr 2</td>
+                            <td>150</td>
+                            <td>120</td>
+                            <td>30</td>
+                            <td>80</td>
+                            <td>100</td>
+                            <td>480</td>
+                            </tr>
+
+                        </tbody>
+                        </table>
+                    </div>
+
+                </Tab.Pane> },
                 { menuItem: 'Botones', render: () => 
-        <Tab.Pane>
+                <Tab.Pane>
                     <p> 
                         <div class="ui buttons">
                             <button class="ui labeled icon button">
@@ -366,14 +494,12 @@ class Home extends Component {
                         </tr>
                     </tbody>
                     </table>
-
-
                     </p>
                     </div>
                     <Segment padded>
-          <Label attached='top left'>View</Label>
-          <Image src='/images/wireframe/paragraph.png' />
-        </Segment>
+                    <Label attached='top left'>View</Label>
+                     <Image src='/images/wireframe/paragraph.png' />
+                     </Segment>
                     <div class="ui two column grid">
                         <div class="column">
                             <div class="ui raised segment">
@@ -544,10 +670,6 @@ class Home extends Component {
                         </div>
                     </div>
                     </div>
-
-                 </Tab.Pane> },
-                { menuItem: 'Header', render: () => 
-                <Tab.Pane> 
                 <div class="ui form">
                 <div class="three fields">
                     <div class="field">
@@ -643,8 +765,7 @@ class Home extends Component {
                             <div class="column"></div>
                         </div>
                     </div>
-                    
-               
+    
                     <div class="ui menu">
                         <a class="browse item active">
                             Browse
@@ -690,9 +811,6 @@ class Home extends Component {
                             </div>
                         </div>
                         </div>
-  
-                 
-                   
                 <table class="ui sortable celled table">
                     <thead>
                         <tr>
@@ -764,10 +882,6 @@ class Home extends Component {
                         </tr>
                     </tfoot>
                 </table>   
-
-                </Tab.Pane> },
-                { menuItem: 'grid 3', render: () => 
-                <Tab.Pane>
                     <div class="ui four cards">
                     <a class="red card">
                         <div class="image">
@@ -912,150 +1026,8 @@ class Home extends Component {
                         </div>
                     </div>
                     </div>
-           
+
                     </Tab.Pane> },
-                { menuItem: 'Accordeon', render: () => 
-                <Tab.Pane> 
-                    <select class="ui fluid search dropdown" multiple="">
-                        <option value="">State</option>
-                        <option value="AL">Alabama</option>
-                        <option value="AK">Alaska</option>
-                        <option value="WV">West Virginia</option>
-                        <option value="WI">Wisconsin</option>
-                        <option value="WY">Wyoming</option>
-                        </select>
-
-                        <div class="ui floating dropdown labeled icon button">
-                        <i class="filter icon"></i>
-                        <span class="text">Filter Posts</span>
-                        <div class="menu">
-                            <div class="ui icon search input">
-                            <i class="search icon"></i>
-                            <input type="text" placeholder="Search tags..."></input>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="header">
-                            <i class="tags icon"></i>
-                            Tag Label
-                            </div>
-                            <div class="scrolling menu">
-                            <div class="item">
-                                <div class="ui red empty circular label"></div>
-                                Important
-                            </div>
-                            <div class="item">
-                                <div class="ui blue empty circular label"></div>
-                                Announcement
-                            </div>
-                            <div class="item">
-                                <div class="ui black empty circular label"></div>
-                                Cannot Fix
-                            </div>
-                            <div class="item">
-                                <div class="ui purple empty circular label"></div>
-                                News
-                            </div>
-                            <div class="item">
-                                <div class="ui orange empty circular label"></div>
-                                Enhancement
-                            </div>
-                            <div class="item">
-                                <div class="ui empty circular label"></div>
-                                Change Declined
-                            </div>
-                            <div class="item">
-                                <div class="ui yellow empty circular label"></div>
-                                Off Topic
-                            </div>
-                            <div class="item">
-                                <div class="ui pink empty circular label"></div>
-                                Interesting
-                            </div>
-                            <div class="item">
-                                <div class="ui green empty circular label"></div>
-                                Discussion
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-
-                        <h4 class="ui header">Inline</h4>
-                        <p>A dropdown can be formatted to appear inline in other content</p>
-                        <span>
-                        Show me posts by
-                        <div class="ui inline dropdown">
-                            <div class="text">
-                            <img class="ui avatar image" src="/images/avatar/small/jenny.jpg"></img>
-                            Jenny Hess
-                            </div>
-                            <i class="dropdown icon"></i>
-                            <div class="menu">
-                            <div class="item">
-                                <img class="ui avatar image" src="/images/avatar/small/jenny.jpg"></img>
-                                Jenny Hess
-                            </div>
-                            <div class="item">
-                                <img class="ui avatar image" src="/images/avatar/small/elliot.jpg"></img>
-                                Elliot Fu
-                            </div>
-                            <div class="item">
-                                <img class="ui avatar image" src="/images/avatar/small/stevie.jpg"></img>
-                                Stevie Feliciano
-                            </div>
-                            <div class="item">
-                                <img class="ui avatar image" src="/images/avatar/small/christian.jpg"></img>
-                                Christian
-                            </div>
-                            <div class="item">
-                                <img class="ui avatar image" src="/images/avatar/small/matt.jpg"></img>
-                                Matt
-                            </div>
-                            <div class="item">
-                                <img class="ui avatar image" src="/images/avatar/small/justen.jpg"></img>
-                                Justen Kitsune
-                            </div>
-                            </div>
-                        </div>
-                        </span>
-
-                        <div class="ui floating labeled icon dropdown button">
-                        <i class="add user icon"></i>
-                        <span class="text">Add User</span>
-                        <div class="menu">
-                            <div class="header">
-                            People You Might Know
-                            </div>
-                            <div class="item">
-                            <img class="ui avatar image" src="/images/avatar/small/jenny.jpg"></img>
-                            Jenny Hess
-                            </div>
-                            <div class="item">
-                            <img class="ui avatar image" src="/images/avatar/small/elliot.jpg"></img>
-                            Elliot Fu
-                            </div>
-                            <div class="item">
-                            <img class="ui avatar image" src="/images/avatar/small/stevie.jpg"></img>
-                            Stevie Feliciano
-                            </div>
-                            <div class="header">
-                            Your Friends' Friends
-                            </div>
-                            <div class="item">
-                            <img class="ui avatar image" src="/images/avatar/small/christian.jpg"></img>
-                            Christian
-                            </div>
-                            <div class="item">
-                            <img class="ui avatar image" src="/images/avatar/small/matt.jpg"></img>
-                            Matt
-                            </div>
-                            <div class="item">
-                            <img class="ui avatar image" src="/images/avatar/small/justen.jpg"></img>
-                            Justen Kitsune
-                            </div>
-                        </div>
-                        </div>
-
-                </Tab.Pane> },
             ]} />
 
            </Container>
