@@ -264,7 +264,7 @@ class Home extends Component {
                         <Label attached=' top right'>
                         <div class="ui mini buttons">
                             <button class="ui labeled icon button">
-                                <i class="left chevron icon"></i>
+                              
                                 30 días
                             </button>
                             <button class="ui button">
@@ -277,7 +277,7 @@ class Home extends Component {
                             </button>
                             <button class="ui right labeled icon button">
                                 MAX
-                                <i class="right chevron icon"></i>
+                               
                             </button>
                         </div></Label>
 
@@ -307,7 +307,11 @@ class Home extends Component {
                         </div>
                         </h2>  
                         </center>
-                        <table class="ui blue unstackable table">
+                        <h4 class="ui horizontal divider header">
+                    <i class="bar chart icon"></i>
+                    Estudios
+                    </h4>
+                        <table class="ui red unstackable table">
                         <thead>
                             <tr>
                                 <th></th>
@@ -330,7 +334,11 @@ class Home extends Component {
                             </tr>
                            
                         </tbody></table>
-                        <table class="ui red unstackable table">
+                        <h4 class="ui horizontal divider header">
+                    <i class="bar chart icon"></i>
+                    Interpretaciones
+                    </h4>
+                        <table class="ui blue unstackable table">
                         <thead>
                             <tr>
                                 <th></th>
@@ -369,7 +377,11 @@ class Home extends Component {
                             <td>480</td>
                             </tr>
                             </tbody></table>
-                        <table class="ui teal unstackable table">
+                            <h4 class="ui horizontal divider header">
+                    <i class="bar chart icon"></i>
+                    Referentes
+                    </h4>
+                        <table class="ui green unstackable table">
                         <thead>
                             <tr>
                                 <th></th>
@@ -425,7 +437,7 @@ class Home extends Component {
                         <Label attached=' top right'>
                         <div class="ui mini buttons">
                             <button class="ui labeled icon button">
-                                <i class="left chevron icon"></i>
+                            
                                 30 días
                             </button>
                             <button class="ui button">
@@ -438,7 +450,7 @@ class Home extends Component {
                             </button>
                             <button class="ui right labeled icon button">
                                 MAX
-                                <i class="right chevron icon"></i>
+                               
                             </button>
                         </div></Label>
 
@@ -448,7 +460,6 @@ class Home extends Component {
                         -------------- "DETALLE DE MODALIDADES DURANTE /30DIAS/3MESES/1AÑO/TOTAL" --------------- <br />
                                         </p>
                                             <center>
-                                                total de estudios, total de interpretaciones, promedio diario de estudios, promedio diario de interpretaciones 
                         <h2 class="ui icon header">
                         <i class="<i chart bar icon"></i>
                         <div class="content">
@@ -464,16 +475,20 @@ class Home extends Component {
                         </h2>  
                   
                         <h2 class="ui icon header">
-                        <i class="chart bar outline icon"></i>
+                        <i class="chart area icon"></i>
                         <div class="content">
-                            bar chart  
+                            area chart  
                             <div class="sub header">
                             concentrado por hora
                                 </div>
                         </div>
                         </h2>  
                         </center>
-                        <table class="ui blue unstackable table">
+                        <h4 class="ui horizontal divider header">
+                    <i class="bar chart icon"></i>
+                    Estudios por modalidad
+                    </h4>
+                        <table class="ui red unstackable table">
                         <thead>
                             <tr>
                                 <th>estudios </th>
@@ -522,7 +537,11 @@ class Home extends Component {
                             <td>480</td>
                             </tr>
                             </tbody></table>
-                        <table class="ui teal unstackable table">
+                            <h4 class="ui horizontal divider header">
+                    <i class="bar chart icon"></i>
+                    Interpreaciones por modalidad
+                    </h4>
+                        <table class="ui blue unstackable table">
                         <thead>
                             <tr>
                                 <th>interpretaciones</th>
