@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Route, Switch,Redirect, Link, withRouter} from 'react-router-dom';
 import Semantic from './Semantic';
 import { Grid, Button, Container, Header, Tab, Form, GridColumn } from 'semantic-ui-react';
-import { Image, Label, List, Segment, Icon, TextArea } from 'semantic-ui-react';
+import { Image, Label, Table, List, Segment, Icon, TextArea } from 'semantic-ui-react';
 import { Doughnut } from 'react-chartjs-2';
 
 import 'semantic-ui-css/semantic.min.css';
@@ -584,6 +584,132 @@ class Home extends Component {
                         </table>
                     </div>
                 </div>
+
+                </Tab.Pane> },
+                { menuItem: 'Estudios', render: () => 
+                <Tab.Pane>
+                    <div class="ui segment">
+                        <a class="ui red basic right ribbon label">
+                        <i class="edit icon"></i>
+                            GIL</a><p></p>
+                        <a class="ui red basic right ribbon label">
+                            <i class="edit icon"></i>
+                            SECRE1
+                            </a>
+                        <div class="ui top left attached label">
+                        <i class="small blue clipboard check archive icon"></i>
+                        <i class="small blue id badge icon"></i>
+                        <i class="small yellow sign out alternate icon"></i>
+                        <i class="small yellow paper plane icon"></i>
+                        <i class="small green thumbs up icon"></i>
+                        </div>
+
+                        <div class="ui bottom left attached label">
+                        <i class="small red ambulance icon"></i>
+                        <i class="small blue check circle outline icon"></i>
+                        <i class="small green file pdf outline icon"></i>
+                        <i class="small yellow envelope outline icon"></i>
+                        <i class="small pink cloud download icon"></i>
+                        <i class="small orange paperclip icon"></i>
+                        </div>
+
+                        
+                        <p>
+                            <div class="ui blue horizontal label">CT</div> ------------------------ NOMBRE DEL PACIENTE PROCEDIMIENTO
+                        </p><p>  - </p><p>  - </p>
+                   </div>
+
+                   <Table celled striped>
+                        <Table.Header>
+                        <Table.Row>
+                            <Table.HeaderCell colSpan='5'>Git Repository</Table.HeaderCell>
+                        </Table.Row>
+                        </Table.Header>
+
+                        <Table.Body>
+                        <Table.Row>
+                            <Table.Cell collapsing textAlign='center'>
+                                <div class="ui segment">
+                                    <div class="ui top left attached label">
+                                    <i class="small blue clipboard check archive icon"></i>
+                                    <i class="small blue id badge icon"></i>
+                                    <i class="small yellow sign out alternate icon"></i>
+                                    <i class="small yellow paper plane icon"></i>
+                                    <i class="small green thumbs up icon"></i>
+                                    </div>
+                                    <div class="ui bottom left attached label">
+                                    <i class="small red ambulance icon"></i>
+                                    <i class="small blue check circle outline icon"></i>
+                                    <i class="small green file pdf outline icon"></i>
+                                    <i class="small yellow envelope outline icon"></i>
+                                    <i class="small pink cloud download icon"></i>
+                                    <i class="small orange paperclip icon"></i>
+                                    </div>
+                                    <p>  <p></p><p></p>
+                                        <div class="ui blue horizontal label">CT</div>
+                                </p>  <p></p><p></p></div>
+                                </Table.Cell>
+                            <Table.Cell collapsing textAlign='center'>NOMBRE PACIENTE</Table.Cell>
+                            <Table.Cell>ID PACIENTE</Table.Cell>
+                            <Table.Cell>FECHA</Table.Cell>
+                            <Table.Cell collapsing textAlign='right'>
+                                <a class="ui red basic right ribbon label">
+                                    <i class="edit icon"></i>
+                                     GIL</a>
+                                PROCEDIMIENTO
+                                </Table.Cell>
+                        </Table.Row>
+                        <Table.Row>
+                            <Table.Cell collapsing textAlign='center'>
+                           
+                                        <div class="ui blue horizontal label">CT</div>
+                    
+                                </Table.Cell>
+                            <Table.Cell collapsing textAlign='center'>NOMBRE PACIENTE</Table.Cell>
+                            <Table.Cell>fecha nacimiento <br /> ID PACIENTE</Table.Cell>
+                            <Table.Cell>FECHA</Table.Cell>
+                            <Table.Cell collapsing textAlign='right'>
+                            <Label ribbon='right'>First</Label>
+                                PROCEDIMIENTO
+                                </Table.Cell>
+                        </Table.Row>
+                        <Table.Row>
+                            <Table.Cell collapsing>
+                            <div class="ui segment">
+                                    <div class="ui top left attached label">
+                                    <i class="small blue clipboard check archive icon"></i>
+                                    <i class="small blue id badge icon"></i>
+                                    <i class="small yellow sign out alternate icon"></i>
+                                    <i class="small yellow paper plane icon"></i>
+                                    <i class="small green thumbs up icon"></i>
+                                    </div>
+                                    <div class="ui bottom left attached label">
+                                    <i class="small red ambulance icon"></i>
+                                    <i class="small blue check circle outline icon"></i>
+                                    <i class="small green file pdf outline icon"></i>
+                                    <i class="small yellow envelope outline icon"></i>
+                                    <i class="small pink cloud download icon"></i>
+                                    <i class="small orange paperclip icon"></i>
+                                    </div>
+                                    <p></p><p></p>
+                                    <p>
+                                        <div class="ui blue horizontal label">MG</div>
+                                </p><p></p><p></p>
+                                </div>
+                                </Table.Cell>
+                            <Table.Cell collapsing textAlign='center'>NOMBRE PACIENTE</Table.Cell>
+                            <Table.Cell>fecha nacimiento ID PACIENTE</Table.Cell>
+                            <Table.Cell>FECHA</Table.Cell>
+                            <Table.Cell collapsing textAlign='right'>
+                                PROCEDIMIENTO
+                                </Table.Cell>
+                        </Table.Row>
+
+                        </Table.Body>
+                    </Table>
+
+
+
 
                 </Tab.Pane> },
                 { menuItem: 'Botones', render: () => 
